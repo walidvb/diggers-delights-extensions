@@ -23,6 +23,5 @@ function openIframe() {
   iframeContainer.append(iframe);
   div.append(iframeContainer);
   document.body.append(div);
-  iframe.focus();
 }
 openIframe();

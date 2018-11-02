@@ -2,15 +2,19 @@
   "manifest_version": 2,
   "name": "DiggersDelights",
   "description": "The easiest way to dig songs and share them to your friends!",
-  "version": "1",
+  "version": "1.0.1",
   "author": "walidvb",
   "browser_action": {
     "default_icon": "logo.png",
     "default_title": "DiggersDelights"
   },
+  "icons": {
+    "16": "logo_16.png",
+    "128": "logo_128.png"
+  },
   "background": {
     "scripts":
     ["background.js"]
   },
-  "permissions": ["activeTab"]
+  "permissions": ["activeTab", "contextMenus"]
 }
