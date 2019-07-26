@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "DiggersDelights",
   "description": "The easiest way to dig songs and share them to your friends!",
-  "version": "1.2",
+  "version": "1.2.1",
   "author": "walidvb",
   "browser_action": {
     "default_icon": "logo.png",
@@ -28,7 +28,8 @@
         "*://*.bandcamp.com/track*",
         "*://*.soundcloud.com/*",
         "*://*.dailymotion.com/*",
-        "*://*.mixcloud.com/*"
+        "*://*.mixcloud.com/*",
+        "*://*.nts.live/shows*"
       ],
       "js": [
         "content.js"

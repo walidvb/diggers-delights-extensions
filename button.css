@@ -15,6 +15,10 @@
   font-family: Apercu Pro, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"!important;
   z-index: 20000;
 }
+#diggers-delights-on-page.higher{
+  bottom: 3.5rem;
+  left: .5rem;
+}
 #diggers-delights-on-page:active{
   background-color: #199d76;
 

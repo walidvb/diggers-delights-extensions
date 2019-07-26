@@ -14,6 +14,9 @@ button.append(img)
 var span = document.createElement('span')
 span.innerText = "Dig This!"
 button.append(span)
+if(/soundcloud|mixcloud|nts/.test(window.location)){
+  button.classList.add('higher')
+}
 button.onclick = openIframe
 
 button.id = 'diggers-delights-on-page'
