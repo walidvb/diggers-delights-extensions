@@ -8,7 +8,6 @@ function openIframe() {
 var imgURL = chrome.runtime.getURL("images/logo_16.png");
 var img = document.createElement('img')
 img.src = imgURL
-console.log(imgURL)
 var button = document.createElement('div')
 button.append(img)
 var span = document.createElement('span')
