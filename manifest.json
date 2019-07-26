@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "DiggersDelights",
   "description": "The easiest way to dig songs and share them to your friends!",
-  "version": "1.1",
+  "version": "1.2",
   "author": "walidvb",
   "browser_action": {
     "default_icon": "logo.png",
@@ -16,5 +16,27 @@
     "scripts":
     ["background.js"]
   },
+  "web_accessible_resources": [
+    "images/logo_16.png"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.youtube.com/watch*",
+        "*://*.vimeo.com/*",
+        "*://*.bandcamp.com/album*",
+        "*://*.bandcamp.com/track*",
+        "*://*.soundcloud.com/*",
+        "*://*.dailymotion.com/*",
+        "*://*.mixcloud.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "button.css"
+      ]
+    }
+  ],
   "permissions": ["activeTab", "contextMenus"]
 }

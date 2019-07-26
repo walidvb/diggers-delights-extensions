@@ -1,0 +1,26 @@
+#diggers-delights-on-page{
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  width: auto!important;
+  padding: 2px 4px 2px 2px!important;
+  background-color: #20c997;
+  border: 1px solid #199d76;
+  border-radius: 2px;
+  color: white;
+  margin: 0!important;
+  font-size: 12px;
+  display: flex;
+  cursor: pointer;
+  font-family: Apercu Pro, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"!important;
+  z-index: 20000;
+}
+#diggers-delights-on-page:active{
+  background-color: #199d76;
+
+}
+#diggers-delights-on-page img{
+  margin-right: 4px;
+  width: 16px!important;
+  height: 16px!important;
+}
