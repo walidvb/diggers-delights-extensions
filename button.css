@@ -3,23 +3,41 @@
   bottom: 1rem;
   left: 1rem;
   width: auto!important;
-  padding: 2px 4px 2px 2px!important;
   background-color: #20c997;
   border: 1px solid #199d76;
   border-radius: 2px;
   color: white;
   margin: 0!important;
-  font-size: 12px;
+  font-size: 14px;
   display: flex;
+  align-items: center;
   cursor: pointer;
   font-family: Apercu Pro, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"!important;
   z-index: 20000;
 }
-#diggers-delights-on-page.higher{
+
+#diggers-delights-on-page .like{
+  font-size: 1.25rem;
+  padding: 0 .2rem;
+  line-height: 1;
+  border-right: 1px solid #199d76;
+}
+#diggers-delights-on-page .like:hover{
+  transform: scale(1.1);
+}
+#diggers-delights-on-page .like.liked{
+  color: orangered;
+}
+
+#diggers-delights-on-page .dialog-trigger{
+  padding: 0 .4rem;
+}
+
+#diggers-delights-on-page .higher{
   bottom: 3.5rem;
   left: .5rem;
 }
-#diggers-delights-on-page:active{
+#diggers-delights-on-page :active{
   background-color: #199d76;
 
 }
