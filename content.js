@@ -22,6 +22,22 @@ async function addLikeTrigger(){
     }
   }
   getCurrentStatus()
+  btn.onclick = async () => {
+    fetch
+    const res = await fetch(`${URL}/api/links/like`, {
+      method: 'POST',
+      headers: { 
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        url: window.location
+      })
+    })
+    if (res.status >= 200 && res.status < 300) {
+      const { status } = await res.json()
+      btn.classList.toggle('liked', status)
+    }
+  }
 }
 
 
