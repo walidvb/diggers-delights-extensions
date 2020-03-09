@@ -8,7 +8,7 @@
   border-radius: 2px;
   color: white;
   margin: 0!important;
-  font-size: 14px;
+  font-size: 12px;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -17,12 +17,12 @@
 }
 
 #diggers-delights-on-page .like{
-  font-size: 1.25rem;
-  padding: 0 .2rem;
+  font-size: 1.25em;
+  padding: .2em .4em;
   line-height: 1;
   border-right: 1px solid #199d76;
 }
-#diggers-delights-on-page .like:hover{
+#diggers-delights-on-page >*:hover{
   transform: scale(1.1);
 }
 #diggers-delights-on-page .like.liked{
@@ -30,12 +30,12 @@
 }
 
 #diggers-delights-on-page .dialog-trigger{
-  padding: 0 .4rem;
+  padding: .2em .4em;
 }
 
-#diggers-delights-on-page .higher{
-  bottom: 3.5rem;
-  left: .5rem;
+#diggers-delights-on-page.higher{
+  bottom: 3.5em;
+  left: .5em;
 }
 #diggers-delights-on-page :active{
   background-color: #199d76;

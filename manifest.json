@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "DiggersDelights",
   "description": "The easiest way to dig songs and share them to your friends!",
-  "version": "1.3.6",
+  "version": "1.4.1",
   "author": "walidvb",
   "browser_action": {
     "default_icon": "logo.png",
@@ -43,6 +43,7 @@
     "activeTab", 
     "contextMenus",
     "http://diggersdelights.net/*",
-    "http://localhost:3000/*"
+    "http://localhost:3000/*",
+    "tabs"
   ]
 }
