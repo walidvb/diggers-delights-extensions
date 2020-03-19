@@ -1,16 +1,20 @@
-var scriptURL = 'http://localhost:3001/extension.js';
-var xhr = new XMLHttpRequest();
-xhr.open("GET", scriptURL, true);
-xhr.onreadystatechange = function () {
-  if (xhr.readyState == 4) {
-    console.log('xhr.responseText', xhr.responseText)
-    debugger
-    // WARNING! Might be evaluating an evil script!
-    var resp = eval("(" + xhr.responseText + ")");
-    // Or this if it's work
+(function(){
+  var scriptURL = 'https://diggersdelights.herokuapp.com/extension.js';
+  var scriptURL = 'http://localhost:3000/extension.js';
+  var xhr = new XMLHttpRequest();
+  xhr.open("GET", scriptURL, true);
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState == 4) {
+      // WARNING! Might be evaluating an evil script!
+      // var resp = eval("(" + xhr.responseText + ")");
+      // Or this if it's work
+      var script = document.createElement('script');
+      script.src = xhr.responseText;
+      document.body.append(script);
+    }
   }
-}
-xhr.send();
+  xhr.send();
+})();
 
 // (() => {
 //   alert("content")

@@ -29,7 +29,8 @@
         "*://*.soundcloud.com/*",
         "*://*.dailymotion.com/*",
         "*://*.mixcloud.com/*",
-        "*://*.nts.live/shows*"
+        "*://*.nts.live/shows*",
+        "*://walidvb.com/*"
       ],
       "js": [
         "content.js"
@@ -42,8 +43,9 @@
   "permissions": [
     "activeTab", 
     "contextMenus",
-    "http://diggersdelights.net/*",
-    "http://localhost:3000/*",
+    "http://diggersdelights.net/",
+    "http://localhost:3000/",
+    "http://diggersdelights.herokuapp.net/",
     "tabs"
   ]
 }
